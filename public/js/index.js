@@ -97,3 +97,72 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+//-----------------------------------------------------------------------//
+//***********************************************************************//
+
+$("#2pregunta").hide();
+$("#3pregunta").hide();
+$("#4pregunta").hide();
+
+$("#1buena").click(function() {
+  $("#1pregunta").hide();
+  $("#2pregunta").show();
+});
+
+$("#1mala").click(function() {
+  $("#1pregunta").hide();
+  console.log("No te encuentras en edad de invertir");
+});
+
+$("#2buena").click(function() {
+  $("#2pregunta").hide();
+  $("#3pregunta").show();
+});
+
+$("#2mala").click(function() {
+  $("#2pregunta").hide();
+  console.log("Es importante tener un ahorro para emergencias!");
+});
+
+$("#3buena").click(function() {
+  $("#3pregunta").hide();
+  $("#4pregunta").show();
+  console.log("puedes invertir");
+});
+
+$(".perfil").click(function() {
+  $("#4pregunta").hide();
+  console.log("tu perfil de riesgo es: " + $(this).data("rsk"));
+  newChart();
+});
+
+function newChart() {
+  var ctx = document.getElementById("myChart");
+
+  new Chart(document.getElementById("myChart"), {
+    type: "doughnut",
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: [
+            "#3e95cd",
+            "#8e5ea2",
+            "#3cba9f",
+            "#e8c3b9",
+            "#c45850"
+          ],
+          data: [2478, 5267, 734, 784, 433]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Predicted world population (millions) in 2050"
+      }
+    }
+  });
+}

@@ -1,5 +1,15 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS sputnikdev;
+CREATE DATABASE sputnikdev;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+-- USE sputnikdev;
+
+-- CREATE TABLE ETFS (
+--    id INT NOT NULL AUTO_INCREMENT,
+--    etf VARCHAR(252) NOT NULL,
+--    yearmonth INT NOT NULL,
+--    yield FLOAT,
+--    PRIMARY KEY (id)
+-- );
+
+DROP DATABASE IF EXISTS sputniktest;
+CREATE DATABASE sputniktest;
