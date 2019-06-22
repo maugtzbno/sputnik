@@ -7,11 +7,13 @@
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+              placeholder="Enter Example Text">
           </div>
           <div class="form-group">
             <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description"
+              placeholder="Enter Example Description"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
@@ -27,7 +29,82 @@
       </div>
     </div>
   </div>
-</div>
+  <div id="1pregunta">
+    <div id="sizeControls" class="card">
+      <h4 class="card-header">Tu edad se encuentra entre los 18 y 75 años?</h4>
+      <div class="card-body">
+        <div class="text-center">
+          <button class="btn btn-dark btn-lg normal-button" id="1buena">
+            <span class="fa fa-ok"></span> Sí.</button>
+          <button class="btn btn-primary btn-lg grow-button" id="1mala">
+            <span class="fa fa-plus"></span> No, soy menor de 18 años.</button>
+          <button class="btn btn-danger btn-lg shrink-button" id="1mala">
+            <span class="fa fa-minus"></span> No, soy mayor de 75 años.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="2pregunta">
+    <div id="sizeControls" class="card">
+      <h4 class="card-header">Debido a que el valor de tu inversión puede variar en el tiempo,
+        es importante contar con al menor 3 meses de sueldo ahorrados aparte de tu inversión
+        para emergencias.
+      </h4>
+      <div class="card-body">
+        <div class="text-center">
+          <button class="btn btn-dark btn-lg normal-button" id="2buena">
+            <span class="fa fa-ok"></span> Sí, cuento con los ahorros.</button>
+          <button class="btn btn-primary btn-lg grow-button" id="2mala">
+            <span class="fa fa-plus"></span> No, cuento con este ahorro.</button>
+          <button class="btn btn-danger btn-lg shrink-button" id="2mala">
+            <span class="fa fa-minus"></span> Porque es importante esto?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="3pregunta">
+    <div id="sizeControls" class="card">
+      <h4 class="card-header">Pagas intereses en prestamos personales, credito automotriz o
+        tarjetas de crédito?
+      </h4>
+      <div class="card-body">
+        <div class="text-center">
+          <button class="btn btn-dark btn-lg normal-button" id="3buena">
+            <span class="fa fa-ok"></span> No pago intereses en estos productos.</button>
+          <button class="btn btn-primary btn-lg grow-button" id="3mala">
+            <span class="fa fa-plus"></span> Sí, frecuentemente pago interes por varias razones.</button>
+          <button class="btn btn-danger btn-lg shrink-button" id="3mala">
+            <span class="fa fa-minus"></span> A que te refieres?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="4pregunta">
+    <div id="sizeControls" class="card">
+      <h4 class="card-header">¡Excelente! Cuentas con la solvencia economica para ser un inversionista.
+        Una ultima pregunta para medir tu perfil de riesgo. ¿En que rango de variación te sientes comodo?
+      </h4>
+      <div class="card-body">
+        <div class="text-center">
+          <button class="btn btn-dark btn-lg normal-button perfil" data-rsk="moderate">
+            <span class="fa fa-ok"></span> Una variación del 5% de mi patrimonio. </button>
+          <button class="btn btn-primary btn-lg grow-button perfil" data-rsk="equilibrium">
+            <span class="fa fa-plus"></span> Hasta una variación del 10% de la estrategia. </button>
+          <button class="btn btn-danger btn-lg shrink-button perfil" data-rsk="aggresive">
+            <span class="fa fa-minus"></span> Me siento comodo con variaciones de más del 10% debido a
+            que mi inversión es a largo plazo. </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="graficas">
+    <canvas id="myChart" style="position: relative; height:40vh; width:80vw">
 
+    </canvas>
+  </div>
+</div>
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="./myChart.js"></script>
 <script src="/js/index.js"></script>
