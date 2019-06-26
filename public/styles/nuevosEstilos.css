@@ -1,0 +1,116 @@
+/* body{
+    background-color: aqua;
+}
+
+:nth-child(2) {
+    background-color: black;
+    border: 0;
+} */
+
+#header {
+    /*background-color: rgb(59, 248, 1);*/
+    /*border: bold 2px solid powderblue;*/
+    font-size:10vw;
+    color: #f1f1f1;
+    border: 4px solid rgb(233, 237, 238);
+    border-radius: 18px;
+   /* border: 2px solid red;
+    border-radius: 10px;*/
+    margin: 55px;
+    text-align: center;
+    padding: 18px 20px;
+   /*margin: 8px 0;
+   border: none;*/
+   background-color:rgb(255, 0, 0);
+   font-weight: bold;
+    /*font-family:  Times, serif;*/
+    font-size: 2.5em;
+  
+   /* opacity: .5;*/
+}
+#head{
+    background-color: rgb(26, 1, 248);
+    border: 2px solid rgb(233, 237, 238);
+    border-radius: 12px;
+    margin: 50px;
+    text-align: center;
+    color: #fff
+
+}
+#primera_pregunta {
+    background-color: rgb(40, 80, 165);
+    /*opacity: .3 !important;*/
+}
+
+#segunda_pregunta{
+    background-color: rgb(26, 1, 248);
+    border: 1px solid powderblue;
+    margin: 50px;
+    opacity: .5;
+
+}
+#tercera_pregunta{
+    background-color: rgb(26, 1, 248);
+    border: 1px solid powderblue;
+  margin: 50px;
+    opacity: .5;
+
+}
+#cuarta_pregunta{
+    background-color: rgb(26, 1, 248);
+    border: 1px solid powderblue;
+  margin: 50px;
+    opacity: .5;
+
+}
+#example-text {
+    background-color: rgb(223, 219, 0);
+    border: 2px solid rgb(233, 237, 238);
+    /*opacity: .3 !important;*/
+
+}
+#sizeControls{
+    text-align: center;
+    background-color: #94adb8;
+    opacity: .9 !important;
+}
+#submit {
+    opacity: .9;
+
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }

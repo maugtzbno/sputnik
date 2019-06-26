@@ -1,9 +1,42 @@
+
+<video autoplay muted loop id="myVideo">
+  <source src="/video/Finance.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <h1>Sputnik</h1>
+  <p>Lorem ipsum...</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
+        <div id="header">
         <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
+        </div>
+        <div id="head">
+        <h2>Sputnik Finance!</h2>
+        </div>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Example Text</label>
@@ -29,14 +62,14 @@
       </div>
     </div>
   </div>
-  <div id="1pregunta">
+  <div id="primera_pregunta">
     <div id="sizeControls" class="card">
       <h4 class="card-header">Tu edad se encuentra entre los 18 y 75 años?</h4>
       <div class="card-body">
         <div class="text-center">
           <button class="btn btn-dark btn-lg normal-button" id="1buena">
             <span class="fa fa-ok"></span> Sí.</button>
-          <button class="btn btn-primary btn-lg grow-button" id="1mala">
+          <button id="nel18menos" class="btn btn-primary btn-lg grow-button" id="1mala">
             <span class="fa fa-plus"></span> No, soy menor de 18 años.</button>
           <button class="btn btn-danger btn-lg shrink-button" id="1mala">
             <span class="fa fa-minus"></span> No, soy mayor de 75 años.</button>
@@ -44,7 +77,7 @@
       </div>
     </div>
   </div>
-  <div id="2pregunta">
+  <div id="segunda_pregunta">
     <div id="sizeControls" class="card">
       <h4 class="card-header">Debido a que el valor de tu inversión puede variar en el tiempo,
         es importante contar con al menor 3 meses de sueldo ahorrados aparte de tu inversión
@@ -62,7 +95,7 @@
       </div>
     </div>
   </div>
-  <div id="3pregunta">
+  <div id="tercera_pregunta">
     <div id="sizeControls" class="card">
       <h4 class="card-header">Pagas intereses en prestamos personales, credito automotriz o
         tarjetas de crédito?
@@ -79,7 +112,7 @@
       </div>
     </div>
   </div>
-  <div id="4pregunta">
+  <div id="cuarta_pregunta">
     <div id="sizeControls" class="card">
       <h4 class="card-header">¡Excelente! Cuentas con la solvencia economica para ser un inversionista.
         Una ultima pregunta para medir tu perfil de riesgo. ¿En que rango de variación te sientes comodo?

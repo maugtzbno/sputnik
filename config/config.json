@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "1234",
-    "database": "sputnikdev",
+    "password": "password",
+    "database": "sputniktest",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "1234",
+    "password": "password",
     "database": "sputniktest",
     "host": "localhost",
     "dialect": "mysql",

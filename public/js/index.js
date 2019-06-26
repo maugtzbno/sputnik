@@ -101,38 +101,38 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 //-----------------------------------------------------------------------//
 //***********************************************************************//
 
-$("#2pregunta").hide();
-$("#3pregunta").hide();
-$("#4pregunta").hide();
+$("#segunda_pregunta").hide();
+$("#tercera_pregunta").hide();
+$("#cuarta_pregunta").hide();
 
 $("#1buena").click(function() {
-  $("#1pregunta").hide();
-  $("#2pregunta").show();
+  $("#primera_pregunta").hide();
+  $("#segunda_pregunta").show();
 });
 
 $("#1mala").click(function() {
-  $("#1pregunta").hide();
+  $("#primera_pregunta").hide();
   console.log("No te encuentras en edad de invertir");
 });
 
 $("#2buena").click(function() {
-  $("#2pregunta").hide();
-  $("#3pregunta").show();
+  $("#segunda_pregunta").hide();
+  $("#tercera_pregunta").show();
 });
 
 $("#2mala").click(function() {
-  $("#2pregunta").hide();
+  $("#segunda_pregunta").hide();
   console.log("Es importante tener un ahorro para emergencias!");
 });
 
 $("#3buena").click(function() {
-  $("#3pregunta").hide();
-  $("#4pregunta").show();
+  $("#tercera_pregunta").hide();
+  $("#cuarta_pregunta").show();
   console.log("puedes invertir");
 });
 
 $(".perfil").click(function() {
-  $("#4pregunta").hide();
+  $("#cuarta_pregunta").hide();
   console.log("tu perfil de riesgo es: " + $(this).data("rsk"));
   newChart();
 });
