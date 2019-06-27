@@ -105,12 +105,12 @@ $("#segunda_pregunta").hide();
 $("#tercera_pregunta").hide();
 $("#cuarta_pregunta").hide();
 
-$("#1buena").click(function() {
+$("#primera_buena").click(function() {
   $("#primera_pregunta").hide();
   $("#segunda_pregunta").show();
 });
 
-$("#1mala").click(function() {
+$("#primera_mala").click(function() {
   $("#primera_pregunta").hide();
   console.log("No te encuentras en edad de invertir");
 });
