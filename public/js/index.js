@@ -170,7 +170,7 @@ var data = [];
     console.log(res);
 
     let ret = {
-      yearmonth: [201901, 201902, 201903, 201904, 201905],
+      yearmonth: [],
       SHV : [],
       SLQD : [],
       HYG : [],
