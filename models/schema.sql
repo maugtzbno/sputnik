@@ -13,3 +13,4 @@ CREATE DATABASE sputnikdev;
 
 DROP DATABASE IF EXISTS sputniktest;
 CREATE DATABASE sputniktest;
+

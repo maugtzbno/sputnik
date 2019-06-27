@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "sputniktest",
+    "database": "sputnikdev",
     "host": "localhost",
     "dialect": "mysql"
   },

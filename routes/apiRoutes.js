@@ -17,6 +17,13 @@ module.exports = function(app) {
     });
   });
 
+  // Get all Portfolios
+  app.get("/api/allportfolios", function(req, res) {
+    db.PORT.findAll({}).then(function(dbExamples) {
+      res.json(dbExamples);
+    });
+  });
+
   // Get all examples
   app.get("/api/examples", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
